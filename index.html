@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Punto de Vista</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Tinos&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+ 
+  <link rel="stylesheet" href="../Proyecto_WEB1/css/styles.css">
 </head>
 <body>
   <div class="contenedor">
@@ -78,18 +77,6 @@
     <span class="copy">© 2026 Mi Proyecto. Todos los derechos reservados.</span>
   </footer>
 
-  <script>
-    // Muestra u oculta el espacio de chats (útil en pantallas pequeñas)
-    const btn = document.getElementById('btn-chats');
-    const cuerpo = document.getElementById('chats-cuerpo');
-    btn.addEventListener('click', () => {
-      const abierto = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!abierto));
-      btn.textContent = abierto ? 'Expandir' : 'Contraer';
-      cuerpo.hidden = abierto;
-    });
-    // En celular empieza contraído
-    if (window.matchMedia('(max-width: 600px)').matches) btn.click();
-  </script>
+  
 </body>
 </html>
